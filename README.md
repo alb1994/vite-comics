@@ -9,4 +9,4 @@
 2 - creo array di links in appheader e li mando in una lista + logo 
 3 - vado in Appmain e imposto il jumbotron
 3 - rinomino il file dc-comics(contenente l array delle card)da file .jason in file.js e lo importo nel Appmain
-4- ciclo l' array importato e creo due liste con sei card
+4- ciclo l' array importato e creo due liste con sei card tramite props

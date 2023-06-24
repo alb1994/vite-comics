@@ -1,11 +1,15 @@
 <script>
 import array_dc from '../dc-comics.js'
+import Appprops from '../components/Appprops.vue'
 export default {
+    components: {
+        Appprops
+    },
     data() {
         return {
             serie: array_dc
         }
-    },
+    }
 }
 </script>
 <template>
@@ -16,10 +20,7 @@ export default {
     <!-- inizio sezione card-->
     <div class="container">
         <div class="flex wrap">
-            <div class="card" v-for="(item, index) in serie" :key="index">
-                <img :src="item.thumb" :alt="item.series" class="img">
-                <h3>{{ item.series }}</h3>
-            </div>
+            <Appprops v-for="(item, index) in serie" :key="index" :image="item.thumb" :series="item.series" />
         </div>
     </div>
 </template>
